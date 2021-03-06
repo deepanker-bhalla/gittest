@@ -1,11 +1,15 @@
-uuid: 43705303-e44e-4bf6-a44c-019550acccdb
+uuid: f0a7a429-9964-450b-9517-9f8312b42f58
 langcode: en
 status: true
 dependencies:
   module:
+    - field_permissions
     - file
     - image
     - user
+third_party_settings:
+  field_permissions:
+    permission_type: public
 _core:
   default_config_hash: 6k-VBFilDLuzgSOT-77CFgHFlcd5D-kqRixtH89EShU
 id: user.user_picture

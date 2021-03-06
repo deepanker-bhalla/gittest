@@ -1,0 +1,18 @@
+uuid: 51f72873-97d9-42b3-8bf5-41a99ab5db6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tradeshow
+id: node.tradeshow.title
+field_name: title
+entity_type: node
+bundle: tradeshow
+label: 'Exhibitor Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

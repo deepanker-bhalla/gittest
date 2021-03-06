@@ -1,0 +1,19 @@
+uuid: 2b2ca027-46a2-4f49-b109-94ddfcbce638
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.mt_speaker
+id: node.mt_speaker.field_email
+field_name: field_email
+entity_type: node
+bundle: mt_speaker
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,193 @@
+uuid: 72450637-0088-42cd-8c14-28a5fe22d47b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_speaker.field_assigned_to
+    - field.field.node.mt_speaker.field_designation
+    - field.field.node.mt_speaker.field_email
+    - field.field.node.mt_speaker.field_last_name
+    - field.field.node.mt_speaker.field_metatags
+    - field.field.node.mt_speaker.field_mt_spk_affiliations
+    - field.field.node.mt_speaker.field_mt_spk_body
+    - field.field.node.mt_speaker.field_mt_spk_facebook_account
+    - field.field.node.mt_speaker.field_mt_spk_linkedin_account
+    - field.field.node.mt_speaker.field_mt_spk_speaker_photo
+    - field.field.node.mt_speaker.field_mt_spk_subtitle
+    - field.field.node.mt_speaker.field_mt_spk_twitter_account
+    - field.field.node.mt_speaker.field_mt_spk_youtube_account
+    - field.field.node.mt_speaker.field_website_speaker
+    - image.style.thumbnail
+    - node.type.mt_speaker
+  module:
+    - image
+    - link
+    - metatag
+    - path
+    - text
+id: node.mt_speaker.default
+targetEntityType: node
+bundle: mt_speaker
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_assigned_to:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_designation:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_last_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_metatags:
+    weight: 17
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_mt_spk_body:
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_mt_spk_facebook_account:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_spk_linkedin_account:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_spk_speaker_photo:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_spk_subtitle:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_mt_spk_twitter_account:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_spk_youtube_account:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_website_speaker:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  path:
+    type: path
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 20
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 12
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_spk_affiliations: true

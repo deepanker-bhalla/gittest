@@ -1,0 +1,23 @@
+uuid: 829a9b1b-b228-4bc6-b4f5-64cb06c2fec2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_join_url
+    - node.type.zoom_meeting
+  module:
+    - text
+_core:
+  default_config_hash: KaIaM1Ovi7pAoGbLDow2gIIWSnIgg59OAoyS9zVdn24
+id: node.zoom_meeting.field_meeting_join_url
+field_name: field_meeting_join_url
+entity_type: node
+bundle: zoom_meeting
+label: 'Join URL'
+description: 'The meeting participant join URL.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

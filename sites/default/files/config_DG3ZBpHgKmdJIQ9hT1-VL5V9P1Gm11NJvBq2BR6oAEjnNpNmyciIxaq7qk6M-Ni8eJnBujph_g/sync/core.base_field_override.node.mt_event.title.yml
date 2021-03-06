@@ -1,0 +1,18 @@
+uuid: c0491d0c-9e39-4b2d-a1d6-59eb082f947a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mt_event
+id: node.mt_event.title
+field_name: title
+entity_type: node
+bundle: mt_event
+label: 'Session Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

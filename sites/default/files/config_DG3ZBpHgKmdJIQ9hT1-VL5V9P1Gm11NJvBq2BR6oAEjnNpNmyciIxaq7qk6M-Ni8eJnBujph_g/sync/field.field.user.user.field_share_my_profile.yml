@@ -1,0 +1,24 @@
+uuid: 28af984d-1f29-4a7f-91e8-3aadec771d77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_share_my_profile
+  module:
+    - user
+id: user.user.field_share_my_profile
+field_name: field_share_my_profile
+entity_type: user
+bundle: user
+label: 'Share My Profile'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

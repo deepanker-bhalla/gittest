@@ -1,0 +1,21 @@
+uuid: 1302ab9a-6e7d-46ed-bda4-4b21cc6fa097
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zoom_webinar_owner
+    - node.type.webinar
+id: node.webinar.field_zoom_webinar_owner
+field_name: field_zoom_webinar_owner
+entity_type: node
+bundle: webinar
+label: zoom_webinar_owner
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: w_NS1EQ6RvirAuKDzBuVkA
+default_value_callback: ''
+settings: {  }
+field_type: string

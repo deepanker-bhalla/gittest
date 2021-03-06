@@ -1,0 +1,20 @@
+uuid: 310dc4e2-eb4a-42c0-8549-ac2c6aea063b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_company_state
+  module:
+    - user
+id: user.user.field_company_state
+field_name: field_company_state
+entity_type: user
+bundle: user
+label: 'Company State'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
