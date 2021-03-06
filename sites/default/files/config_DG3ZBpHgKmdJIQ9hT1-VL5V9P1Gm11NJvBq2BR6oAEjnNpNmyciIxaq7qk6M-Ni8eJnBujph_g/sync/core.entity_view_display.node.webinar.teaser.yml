@@ -1,0 +1,38 @@
+uuid: 0a4fb6fc-4ca5-4cb9-8eee-0a5b645ef350
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webinar.body
+    - field.field.node.webinar.field_date
+    - field.field.node.webinar.field_teaser
+    - field.field.node.webinar.field_zoom_webinar_id
+    - field.field.node.webinar.field_zoom_webinar_owner
+    - node.type.webinar
+  module:
+    - text
+    - user
+id: node.webinar.teaser
+targetEntityType: node
+bundle: webinar
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date: true
+  field_teaser: true
+  field_zoom_webinar_id: true
+  field_zoom_webinar_owner: true

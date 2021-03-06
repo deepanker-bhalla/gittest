@@ -1,0 +1,67 @@
+uuid: f121d0ba-c9aa-43df-bce3-858326f87de7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.webinar.body
+    - field.field.node.webinar.field_date
+    - field.field.node.webinar.field_teaser
+    - field.field.node.webinar.field_zoom_webinar_id
+    - field.field.node.webinar.field_zoom_webinar_owner
+    - node.type.webinar
+  module:
+    - datetime_range
+    - text
+    - user
+id: node.webinar.default
+targetEntityType: node
+bundle: webinar
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 104
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_teaser:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_zoom_webinar_id:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_zoom_webinar_owner:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

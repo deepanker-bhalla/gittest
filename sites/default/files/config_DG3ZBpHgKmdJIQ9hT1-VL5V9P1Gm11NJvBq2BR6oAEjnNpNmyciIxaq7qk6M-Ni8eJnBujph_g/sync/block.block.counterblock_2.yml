@@ -1,0 +1,31 @@
+uuid: 170baa54-c2d9-42b8-8540-4c0f51aabd78
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_background_image_block:69a121e0-9163-4d99-ba93-6b2b0159e17a'
+  module:
+    - block_content
+    - system
+  theme:
+    - conferenceplus
+id: counterblock_2
+theme: conferenceplus
+region: content_bottom_second
+weight: 0
+provider: null
+plugin: 'block_content:69a121e0-9163-4d99-ba93-6b2b0159e17a'
+settings:
+  id: 'block_content:69a121e0-9163-4d99-ba93-6b2b0159e17a'
+  label: 'Counter block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

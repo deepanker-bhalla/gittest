@@ -1,0 +1,23 @@
+uuid: 41ed3717-c3e5-4747-b766-67b2311dacdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_link
+    - node.type.tradeshow
+  module:
+    - link
+id: node.tradeshow.field_custom_link
+field_name: field_custom_link
+entity_type: node
+bundle: tradeshow
+label: 'Custom link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

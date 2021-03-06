@@ -1,0 +1,36 @@
+uuid: a4874823-c657-4b5f-9152-af00321eecd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.mt_sponsor
+id: node.mt_sponsor.field_user
+field_name: field_user
+entity_type: node
+bundle: mt_sponsor
+label: 'contact Person'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        sponsor: sponsor
+        administrator: '0'
+        eva_user: '0'
+        speaker: '0'
+        attendees: '0'
+        exhibitor: '0'
+        cache_clear: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

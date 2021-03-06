@@ -1,29 +1,88 @@
-uuid: 5e8bf042-451a-4c05-aeae-f009bd9e71f7
+uuid: 958708a5-d665-4834-852d-168279fc0843
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_categories
+    - field.field.user.user.field_company_city
+    - field.field.user.user.field_company_country
+    - field.field.user.user.field_company_state
+    - field.field.user.user.field_company_street_1
+    - field.field.user.user.field_company_street_2
+    - field.field.user.user.field_company_zip_postal
+    - field.field.user.user.field_department
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_membership
+    - field.field.user.user.field_mobile_phone
+    - field.field.user.user.field_mt_full_name
+    - field.field.user.user.field_mt_signature
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_personal_city
+    - field.field.user.user.field_personal_country
+    - field.field.user.user.field_personal_state
+    - field.field.user.user.field_personal_street_1
+    - field.field.user.user.field_personal_street_2
+    - field.field.user.user.field_personal_zip_postal
+    - field.field.user.user.field_salutation
+    - field.field.user.user.field_share_my_profile
+    - field.field.user.user.field_twitter
+    - field.field.user.user.field_website
+    - field.field.user.user.field_workphone
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
     - user
 _core:
-  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+  default_config_hash: C3k_McOy8bL8rTnIjspy5OfFdgqV1z6OdGZaI-tO5eM
 id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
 content:
+  online_status:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   user_picture:
     type: image
     weight: 0
-    region: content
     settings:
       image_style: thumbnail
       image_link: content
     third_party_settings: {  }
     label: hidden
+    region: content
 hidden:
+  field_bio: true
+  field_categories: true
+  field_company_city: true
+  field_company_country: true
+  field_company_state: true
+  field_company_street_1: true
+  field_company_street_2: true
+  field_company_zip_postal: true
+  field_department: true
+  field_facebook: true
+  field_linkedin: true
+  field_membership: true
+  field_mobile_phone: true
+  field_mt_full_name: true
+  field_mt_signature: true
+  field_organization: true
+  field_personal_city: true
+  field_personal_country: true
+  field_personal_state: true
+  field_personal_street_1: true
+  field_personal_street_2: true
+  field_personal_zip_postal: true
+  field_salutation: true
+  field_share_my_profile: true
+  field_twitter: true
+  field_website: true
+  field_workphone: true
   member_for: true

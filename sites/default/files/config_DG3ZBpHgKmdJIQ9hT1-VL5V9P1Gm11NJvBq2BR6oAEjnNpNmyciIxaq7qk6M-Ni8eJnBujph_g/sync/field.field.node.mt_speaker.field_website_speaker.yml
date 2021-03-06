@@ -1,0 +1,23 @@
+uuid: cb3b8780-ea78-42f3-b468-617805887b4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_speaker
+    - node.type.mt_speaker
+  module:
+    - link
+id: node.mt_speaker.field_website_speaker
+field_name: field_website_speaker
+entity_type: node
+bundle: mt_speaker
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

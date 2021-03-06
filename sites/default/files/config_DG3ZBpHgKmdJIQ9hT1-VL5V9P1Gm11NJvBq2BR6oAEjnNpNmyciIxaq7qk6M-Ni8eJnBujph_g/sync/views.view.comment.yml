@@ -1,12 +1,10 @@
-uuid: 39f3c922-28fb-44e2-8b21-626d48d1b26b
+uuid: 40ed4ad9-53a8-4e89-a1f4-68905ed4d6b1
 langcode: en
 status: true
 dependencies:
   module:
     - comment
     - user
-_core:
-  default_config_hash: fsBo_zgUeLyYZdghaw4PkOHA-HqFxu7wmQLilF35XYg
 id: comment
 label: Comments
 module: comment
@@ -694,6 +692,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -736,6 +735,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -975,6 +975,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -1017,6 +1018,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false

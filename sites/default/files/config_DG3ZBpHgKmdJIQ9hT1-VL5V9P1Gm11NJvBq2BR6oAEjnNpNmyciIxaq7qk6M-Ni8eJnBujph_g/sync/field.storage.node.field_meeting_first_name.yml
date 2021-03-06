@@ -1,0 +1,23 @@
+uuid: 59f67d03-9438-43d5-b7cc-d33c54ca732e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: tkC7MF8Jktzd2ckB3Xflu_giV1dhSefhXf0wr-IIJyE
+id: node.field_meeting_first_name
+field_name: field_meeting_first_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

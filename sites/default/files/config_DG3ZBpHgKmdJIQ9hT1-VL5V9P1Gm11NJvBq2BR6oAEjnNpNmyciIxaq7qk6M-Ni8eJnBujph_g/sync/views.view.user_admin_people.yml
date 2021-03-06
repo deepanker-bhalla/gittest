@@ -1,11 +1,11 @@
-uuid: fcfb5f20-f5f5-4552-8d45-262676637c58
+uuid: aa64836e-9c2f-45e1-bbcd-c83ef0bfc266
 langcode: en
 status: true
 dependencies:
   module:
     - user
 _core:
-  default_config_hash: J5EbGNdz0YUaSIYKwomyFSOtZjsV9TrBA3qdb3ZwBS0
+  default_config_hash: queuLjhKGUQ_b-lNh_TkhCvOPrVunfJopvVGOf3cjAo
 id: user_admin_people
 label: People
 module: user
@@ -603,6 +603,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -621,56 +622,6 @@ display:
             name: name
             mail: mail
           plugin_id: combine
-        status:
-          id: status
-          table: users_field_data
-          field: status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: true
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: status_op
-            identifier: status
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: true
-          group_info:
-            label: Status
-            description: ''
-            identifier: status
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: Active
-                operator: '='
-                value: '1'
-              2:
-                title: Blocked
-                operator: '='
-                value: '0'
-          plugin_id: boolean
-          entity_type: user
-          entity_field: status
         roles_target_id:
           id: roles_target_id
           table: user__roles
@@ -755,6 +706,56 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: user_permissions
+        status:
+          id: status
+          table: users_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: status_op
+            identifier: status
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: true
+          group_info:
+            label: Status
+            description: ''
+            identifier: status
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: Active
+                operator: '='
+                value: '1'
+              2:
+                title: Blocked
+                operator: '='
+                value: '0'
+          plugin_id: boolean
+          entity_type: user
+          entity_field: status
         default_langcode:
           id: default_langcode
           table: users_field_data
@@ -821,6 +822,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -906,6 +910,8 @@ display:
         menu_name: admin
         weight: -10
         context: ''
+        enabled: true
+        expanded: false
       tab_options:
         type: normal
         title: People

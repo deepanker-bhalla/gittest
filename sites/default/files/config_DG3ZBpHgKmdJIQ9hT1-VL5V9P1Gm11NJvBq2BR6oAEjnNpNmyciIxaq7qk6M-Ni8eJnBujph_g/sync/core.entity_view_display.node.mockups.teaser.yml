@@ -1,0 +1,32 @@
+uuid: a0d9d145-ac79-4771-8b1c-07cae762202d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mockups.body
+    - field.field.node.mockups.field_mockups_image
+    - node.type.mockups
+  module:
+    - text
+    - user
+id: node.mockups.teaser
+targetEntityType: node
+bundle: mockups
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mockups_image: true

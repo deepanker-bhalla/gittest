@@ -1,0 +1,23 @@
+uuid: 56bf3cce-c36c-4508-9b70-d3458d7043c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: nuUlNN5dltYgNqvwQ6R59_h3zu4omBnaeNhnrbQURJo
+id: node.field_meeting_timezone
+field_name: field_meeting_timezone
+entity_type: node
+type: string
+settings:
+  max_length: 64
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: feee2247-3f07-471f-b431-958b0292f447
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_personal_country
+  module:
+    - options
+    - user
+id: user.user.field_personal_country
+field_name: field_personal_country
+entity_type: user
+bundle: user
+label: 'Personal Country'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,27 @@
+uuid: 9b167d5c-5da6-4ed2-9481-8bc059a887fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sub_sessions
+    - node.type.mt_event
+id: node.mt_event.field_sub_sessions
+field_name: field_sub_sessions
+entity_type: node
+bundle: mt_event
+label: 'Sub Session'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mt_event: mt_event
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

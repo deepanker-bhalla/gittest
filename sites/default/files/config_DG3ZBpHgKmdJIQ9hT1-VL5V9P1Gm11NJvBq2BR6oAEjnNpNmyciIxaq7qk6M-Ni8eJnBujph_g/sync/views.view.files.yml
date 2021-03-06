@@ -1,4 +1,4 @@
-uuid: db8da3f9-30e2-4351-8558-0d7063dd35f8
+uuid: bb004630-0ce7-448a-b08a-b2e8f6295a42
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - file
     - user
 _core:
-  default_config_hash: gLmoA0yjvlXfMRp9ihOhRKSSQQlbdLdvpDkbVwkYPrg
+  default_config_hash: rRWxAX-IQkJ5viACQRovRkC784EyCl9493GU_G23n2Q
 id: files
 label: Files
 module: file
@@ -597,6 +597,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -639,6 +640,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -747,6 +749,8 @@ display:
         menu_name: admin
         weight: 0
         context: ''
+        enabled: true
+        expanded: false
       display_description: ''
       defaults:
         pager: true
@@ -1119,6 +1123,9 @@ display:
           admin_label: 'File usage'
           required: true
       display_extenders: {  }
+      menu:
+        enabled: true
+        expanded: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'

@@ -1,0 +1,24 @@
+uuid: 8fdb236f-efe7-45b0-a850-300d60955234
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.counter_section_view_homepage
+  module:
+    - views
+  theme:
+    - conferenceplus
+id: views_block__counter_section_view_homepage_block_1
+theme: conferenceplus
+region: hidden_blocks_collection
+weight: -50
+provider: null
+plugin: 'views_block:counter_section_view_homepage-block_1'
+settings:
+  id: 'views_block:counter_section_view_homepage-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

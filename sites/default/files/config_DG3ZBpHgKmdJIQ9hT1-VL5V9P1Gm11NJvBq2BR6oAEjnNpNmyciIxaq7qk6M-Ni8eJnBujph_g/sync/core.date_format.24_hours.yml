@@ -1,0 +1,8 @@
+uuid: 08e74a43-8deb-4181-af38-465e756da315
+langcode: en
+status: true
+dependencies: {  }
+id: 24_hours
+label: '24 Hours'
+locked: false
+pattern: 'd/m/Y G:i T'

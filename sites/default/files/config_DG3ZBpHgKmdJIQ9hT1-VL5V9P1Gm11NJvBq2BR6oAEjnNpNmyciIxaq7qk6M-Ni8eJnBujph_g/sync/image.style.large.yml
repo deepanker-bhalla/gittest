@@ -1,17 +1,17 @@
-uuid: 83f6fc1c-f6d6-4c06-bcdf-8e423a27666f
+uuid: 83f5ecf4-f5b6-418e-94b2-f15be3e50354
 langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: J2n0RpFzS0-bgSyxjs6rSdgxB1rb-bTAgqywNx_964M
 name: large
-label: 'Large (480×480)'
+label: 'Large (1110×600)'
 effects:
-  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
-    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
-    id: image_scale
-    weight: 0
+  04b1082a-f66a-4b08-b5a4-9e685ca225f1:
+    uuid: 04b1082a-f66a-4b08-b5a4-9e685ca225f1
+    id: image_scale_and_crop
+    weight: 1
     data:
-      width: 480
-      height: 480
-      upscale: false
+      width: 1110
+      height: 600
+      anchor: center-center

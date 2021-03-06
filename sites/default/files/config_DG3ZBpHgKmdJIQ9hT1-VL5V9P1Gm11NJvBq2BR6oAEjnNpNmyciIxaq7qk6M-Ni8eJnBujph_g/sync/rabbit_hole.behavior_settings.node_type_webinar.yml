@@ -1,0 +1,14 @@
+uuid: 31395f6d-70a2-4277-9b7c-525c4de053ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.webinar
+id: node_type_webinar
+entity_type_id: node_type
+entity_id: webinar
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied
