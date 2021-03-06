@@ -1,4 +1,4 @@
-uuid: a712a34e-6e42-4df3-8340-4891b7f206e7
+uuid: c95f57e3-63f3-42ad-b157-1895fb4ed31f
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ id: node.article.field_image
 field_name: field_image
 entity_type: node
 bundle: article
-label: 'In-page Image(s)'
+label: Image
 description: ''
 required: false
 translatable: true
@@ -26,11 +26,11 @@ settings:
   max_resolution: ''
   min_resolution: ''
   alt_field: true
+  title_field: false
   alt_field_required: true
-  title_field: true
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null

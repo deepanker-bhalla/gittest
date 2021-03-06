@@ -1,24 +1,19 @@
-uuid: 4b3b6df3-3505-4613-82c8-afd95fc5887f
+uuid: 5664bc42-0399-46b7-8300-17edd27988ff
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
 label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'RAC update authenticated'
-  - RAC_view_authenticated
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'access user profiles'
-  - 'administer users'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
-  - 'view post access counter'

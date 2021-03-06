@@ -1,6 +1,0 @@
-base_uri: 'https://api.zoom.us/v2'
-api_key: zoom_paid
-api_secret: zoom_paid
-webhook_verification_token: zoom_paid
-_core:
-  default_config_hash: lAAtgEK9mybjDejBTstsMz2FBKuhhh_-fHIhmQfGtvA
